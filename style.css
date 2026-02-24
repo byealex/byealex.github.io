@@ -1,7 +1,24 @@
-body {
+
+html, body {
     margin: 0;
-    padding: 0 256px;
     font-family: "Inter", sans-serif;
+}
+
+.container {
+  max-width: 1280px;
+  margin: 0 auto; /* centers */
+  padding: 0 64px;    
+  width: 100%;     
+}
+
+header {
+    margin-bottom: 64px;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    gap: 96px;
 }
 
 h1 {
@@ -14,8 +31,17 @@ h2 {
     font-size: 48px;
 }
 
+h3 {
+    font-size: 40px;
+    font-weight: 500;
+}
+
+p {
+    color: #333333
+}
+
 img {
-    height: 942px;
+    height: 748px;
     width: auto;
 }
 
@@ -33,7 +59,9 @@ img {
     color: #1C1C1C;
 }
 
-.hero {
+/* ======================== Hero Section ======================== */
+
+.hero .container{
     display: flex;
     justify-content: space-between;
 }
@@ -63,6 +91,80 @@ img {
     font-weight: 500;
 }
 
+.hero-cta {
+    display: flex;
+    gap: 24px;
+}
+
+/* ======================== Selected Projects Section ======================== */
+
+.project-cards {
+    display: flex;
+    column-gap: 24px;
+    row-gap: 80px;
+    flex-wrap: wrap;
+}
+
+.project-card {
+    /* flex: 1; */
+    width: 400px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: start;
+    /* padding-bottom: 52px; */
+}
+
+.project-card img {
+    width: 100%;
+    height: auto;
+    border-radius: 1rem;
+}
+
+.project-tags {
+    display: flex;
+    gap: 20px;
+}
+
+.project-card span {
+    font-size: 14px;
+    color: #585858;
+    padding: 16px 0;
+    /* border: 1px solid #58585838;
+    padding: 4px 8px;
+    border-radius: 999px; */
+}
+
+.project-title {
+    font-weight: 600;
+    font-size: 32px;
+    padding: 8px 0;
+    margin: 0;
+    /* padding: 4px 0; */
+}
+
+.project-description p {
+    /* color: #333333; */
+    /* font-size: 16px; */
+    /* font-weight: 500; */
+    margin: 12px 0 ;
+}
+
+/* .project-card p {
+    margin: 0;
+} */
+
+/* ======================== Overview Projects Section ======================== */
+
+.overview-projects {
+    display: flex;
+    flex-direction: column;
+    gap: 52px;
+    flex-wrap: wrap;
+}
+
+/* ======================== Reusable components Section ======================== */
+
 .btn-primary {
     padding: 12px 16px;
     background-color: #1C1C1C;
@@ -84,13 +186,41 @@ img {
     border: #1C1C1C 1px solid;
 }
 
+footer {
+    width: 100%;
+}
+
 hr {
-    width: 90%;
     margin-top: 52px;
+    color: #979797;
 }
 
 address {
     display: flex;
     justify-content: center;
     padding: 52px;
+    font-style: normal;
+}
+
+address a {
+    color: #1C1C1C;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+/* #current-page {
+    background-color: #1C1C1C;
+    color: white;
+    padding: 4px 16px;
+    border-radius: 999px;
+    font-weight: 700;
+} */
+
+#current-page {
+    /* background-color: #1C1C1C; */
+    text-decoration: underline #1C1C1C 3px;
+    text-underline-offset: 8px;
+    /* padding: 4px 16px; */
+    /* border-radius: 999px; */
+    font-weight: 700;
 }
