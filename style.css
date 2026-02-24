@@ -112,6 +112,8 @@ img {
     flex-direction: column;
     gap: 10px;
     align-items: start;
+    text-decoration: none; /* remove link underline */
+    color: inherit;  
     /* padding-bottom: 52px; */
 }
 
@@ -144,24 +146,16 @@ img {
 }
 
 .project-description p {
-    /* color: #333333; */
-    /* font-size: 16px; */
-    /* font-weight: 500; */
     margin: 12px 0 ;
+}
+
+.project-description p:first-child {
+    font-weight: 600;
 }
 
 /* .project-card p {
     margin: 0;
 } */
-
-/* ======================== Overview Projects Section ======================== */
-
-.overview-projects {
-    display: flex;
-    flex-direction: column;
-    gap: 52px;
-    flex-wrap: wrap;
-}
 
 /* ======================== Reusable components Section ======================== */
 
@@ -217,10 +211,12 @@ address a {
 } */
 
 #current-page {
-    /* background-color: #1C1C1C; */
     text-decoration: underline #1C1C1C 3px;
     text-underline-offset: 8px;
-    /* padding: 4px 16px; */
-    /* border-radius: 999px; */
     font-weight: 700;
+}
+
+.contact-cta {
+    display: inline-block;
+    margin: 24px 0 16px 0;
 }
