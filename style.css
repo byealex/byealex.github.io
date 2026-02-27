@@ -126,6 +126,7 @@ img {
 .project-tags {
     display: flex;
     gap: 20px;
+    color: #505050;
 }
 
 .project-card span {
@@ -156,6 +157,29 @@ img {
 /* .project-card p {
     margin: 0;
 } */
+
+/* ======================== Single Project Section ======================== */
+
+.project-hero {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.project-devtags {
+    display: flex;
+    gap: 20px;
+    color: #505050;
+}
+
+.project-intro {
+    font-size: 20px;
+}
+
+.section-content {
+    display: flex;
+    gap: 52px;
+}
 
 /* ======================== Reusable components Section ======================== */
 
