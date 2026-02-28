@@ -198,7 +198,7 @@ img {
 .gallery-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(600px, 1fr));
-    gap: 24px;
+    gap: 52px;
 }
 
 .project-gallery img,
@@ -206,6 +206,22 @@ img {
     width: 100%;
     height: auto;
     border-radius: 1rem;
+}
+
+.feature-display {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+
+}
+.feature-caption {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.feature-caption h3, p {
+    margin: 0;
 }
 
 .section-content {
@@ -219,7 +235,7 @@ img {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap: 8px;
+    gap: 24px;
     padding-top: 8rem;
 }
 
