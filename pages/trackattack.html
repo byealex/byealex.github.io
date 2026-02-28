@@ -31,7 +31,7 @@
                     <h1>TrackAttack</h1>
                     <div class="project-devtags">
                         <span>Solo developer</span>
-                        <span>•</span>
+                        <span>•··</span>
                         <span>2025</span>
                     </div>
                     <div class="project-tags">
@@ -42,10 +42,12 @@
                         <span>MySQL</span>
                         <span>Socket.IO</span>
                     </div>
-                    <p class="project-intro">TrackAttack is a full-stack web platform that allows sim racers to manually log lap times, attach video proof and compare performance across tracks and drivers.The project focuses on structured data modeling, real-time interaction, and scalable architecture decisions.</p>
+                    <p class="project-intro">TrackAttack is a full-stack web platform that allows sim racers to log lap times, attach video proof and compare performance across tracks and drivers. The project focuses on structured data modeling, real-time interaction, and clear separation between frontend and backend responsibilities.</p>
                 </div>
             </div>
         </section>
+
+        <!-- <section class="project-gallery"></section> -->
 
         <section class="overview">
             <div class="container">
@@ -54,17 +56,17 @@
                 <div class="section-content">
                     <article>
                         <h3>Problem</h3>
-                        <p>Sim racers often struggle to track and analyze their lap times across different tracks and compare their performance with other drivers. Existing solutions are either too basic, lack real-time features, or are not tailored to the specific needs of the sim racing community.</p>
+                        <p>Sim racers often drive across multiple tracks, cars, and setups. Tracking progress becomes fragmented and inconsistent. There is no structured way to log best lap times, compare progress over time, or verify results with supporting media.</p>
                     </article>
     
                     <article>
                         <h3>Solution</h3>
-                        <p>TrackAttack provides a comprehensive platform for sim racers to log their lap times, attach video evidence, and compare their performance with others. The app features a structured data model for efficient storage and retrieval of lap data, real-time updates using Socket.IO, and a user-friendly interface built with React.</p>
+                        <p>TrackAttack provides a structured lap logging system where users can submit times, associate them with specific tracks and cars, attach video proof, and compare results through organized leaderboards. The platform uses a consistent data model and real-time synchronization to keep rankings up to date while ensuring performance data remains structured and comparable.</p>
                     </article>
     
                     <article>
                         <h3>Focus</h3>
-                        <p>The main focus of this project was to build a scalable and maintainable full-stack web application. I prioritized clean architecture, efficient data modeling, and a responsive user interface that enhances the sim racing experience.</p>
+                        <p>The project emphasizes clear separation between frontend, backend, and database logic. Building and maintaining these boundaries helped me better understand how data flows through a full-stack system.</p>
                     </article>
                 </div>
             </div>
@@ -77,17 +79,24 @@
                 <div class="section-content">
                     <article>
                         <h3>Post a Lap</h3>
-                        <p>Sim racers often struggle to track and analyze their lap times across different tracks and compare their performance with other drivers. Existing solutions are either too basic, lack real-time features, or are not tailored to the specific needs of the sim racing community.</p>
+                        <p>Posting a lap is the central action of TrackAttack. Every other feature supports this core flow.</p>
+                        <ul>
+                            <li>Streamlined submission form</li>
+                            <li>Clear track and car association</li>
+                            <li>Instant feedback via lap detail view</li>
+                            <li>Automatic leaderboard update</li>
+                        </ul>
                     </article>
     
                     <article>
                         <h3>Compare & Explore</h3>
-                        <p>TrackAttack provides a comprehensive platform for sim racers to log their lap times, attach video evidence, and compare their performance with others. The app features a structured data model for efficient storage and retrieval of lap data, real-time updates using Socket.IO, and a user-friendly interface built with React.</p>
+                        <p>Users can explore laps through recent submissions and track-specific leaderboards to compare performance across drivers and sessions.</p>
+                        <p>Structured filtering and consistent data modeling make performance comparison clear and reliable.</p>
                     </article>
     
                     <article>
                         <h3>Interact in Real-Time</h3>
-                        <p>The main focus of this project was to build a scalable and maintainable full-stack web application. I prioritized clean architecture, efficient data modeling, and a responsive user interface that enhances the sim racing experience.</p>
+                        <p>Real-time updates were implemented to reduce page reloads and improve responsiveness. This helped make interactions feel more immediate.</p>
                     </article>
                 </div>
             </div>
@@ -99,7 +108,15 @@
                 
                 <div class="section-content">
                     <article>
-                        <p>Sim racers often struggle to track and analyze their lap times across different tracks and compare their performance with other drivers. Existing solutions are either too basic, lack real-time features, or are not tailored to the specific needs of the sim racing community.</p>
+                        <p>The application is separated into frontend and backend services to keep responsibilities clearly divided and to better understand how client-server communication works in practice.</p>
+                        <ul>
+                            <li>React + Vite for frontend development and client-side state management</li>
+                            <li>Express backend with controller-service separation</li>
+                            <li>MySQL relational schema for structured lap data</li>
+                            <li>Multer for image handling</li>
+                            <li>Socket.IO for real-time comment updates</li>
+                            <li>Ownership checks enforced server-side</li>
+                        </ul>
                     </article>
                 </div>
             </div>
@@ -112,12 +129,16 @@
                 <div class="section-content">
                     <article>
                         <h3>Constraints</h3>
-                        <p>Sim racers often struggle to track and analyze their lap times across different tracks and compare their performance with other drivers. Existing solutions are either too basic, lack real-time features, or are not tailored to the specific needs of the sim racing community.</p>
+                        <ul>
+                            <li>Manual lap time format (hh:mm:sss.fff)</li>
+                            <li>Limited supported games & tracks</li>
+                            <li>No automatic video verification</li>
+                        </ul>
                     </article>
     
                     <article>
                         <h3>Tradeoffs</h3>
-                        <p>TrackAttack provides a comprehensive platform for sim racers to log their lap times, attach video evidence, and compare their performance with others. The app features a structured data model for efficient storage and retrieval of lap data, real-time updates using Socket.IO, and a user-friendly interface built with React.</p>
+                        <p>Instead of implementing complex video validation, I prioritized core submission flow and real-time interaction stability. Feature scope was intentionally limited to keep the structure manageable and focused.</p>
                     </article>
                 </div>
             </div>
@@ -130,12 +151,20 @@
                 <div class="section-content">
                     <article>
                         <h3>Improvements</h3>
-                        <p>Sim racers often struggle to track and analyze their lap times across different tracks and compare their performance with other drivers. Existing solutions are either too basic, lack real-time features, or are not tailored to the specific needs of the sim racing community.</p>
+                        <ul>
+                            <li>Modularizing the API and database logic into smaller, reusable modules</li>
+                            <li>Refactoring repeated UI and layout patterns into reusable components</li>
+                            <li>Reducing hardcoded layout values and improving responsive flexibility</li>
+                            <li>Implementing automated lap verification (e.g., community voting system)</li>
+                            <li>Adding analytics for improved clarity and experience</li>
+                        </ul>
                     </article>
     
                     <article>
                         <h3>Reflection</h3>
-                        <p>TrackAttack provides a comprehensive platform for sim racers to log their lap times, attach video evidence, and compare their performance with others. The app features a structured data model for efficient storage and retrieval of lap data, real-time updates using Socket.IO, and a user-friendly interface built with React.</p>
+                        <p>This project improved my understanding of how important structure becomes as an application grows. I learned that separating concerns early makes future changes easier, even though the system is still relatively simple.</p>
+                        <p>In hindsight, I recognized that parts of the UI could have been abstracted into more reusable components, particularly shared layout elements. This insight helped me better understand when abstraction improves maintainability and when simplicity is sufficient.</p>
+                        <p>AI was used as a support tool when I was stuck on specific implementation details, such as understanding iframe behavior, refining filtering logic, or optimizing complex SQL queries. The overall system structure and data modeling decisions were planned and implemented by me.</p>
                     </article>
                 </div>
             </div>
@@ -147,8 +176,18 @@
                 
                 <div class="section-content">
                     <article>
-                        <p>Sim racers often struggle to track and analyze their lap times across different tracks and compare their performance with other drivers. Existing solutions are either too basic, lack real-time features, or are not tailored to the specific needs of the sim racing community.</p>
+                        <p>Accessibility improvements were implemented during later refinement stages of the project. Non-semantic elements were replaced with appropriate HTML elements, form labels were clarified, keyboard interaction was reviewed, and contrast issues were addressed using Lighthouse audits.</p>
                     </article>
+                </div>
+            </div>
+        </section>
+
+        <section class="contact">
+            <div class="container">
+                <div class="project-contact">
+                    <p>Curious about the decisions behind this project?</p>
+                    
+                    <a class="btn-secondary" href="mailto:ealex.contact@gmail.com">Let's connect</a>
                 </div>
             </div>
         </section>
