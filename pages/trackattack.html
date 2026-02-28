@@ -64,20 +64,20 @@
                 <h2>Overview</h2>
                 
                 <div class="section-content">
-                    <article>
+                    <section>
                         <h3>Problem</h3>
                         <p>Sim racers often drive across multiple tracks, cars, and setups. Tracking progress becomes fragmented and inconsistent. There is no structured way to log best lap times, compare progress over time, or verify results with supporting media.</p>
-                    </article>
+                    </section>
     
-                    <article>
+                    <section>
                         <h3>Solution</h3>
                         <p>TrackAttack provides a structured lap logging system where users can submit times, associate them with specific tracks and cars, attach video proof, and compare results through organized leaderboards. The platform uses a consistent data model and real-time synchronization to keep rankings up to date while ensuring performance data remains structured and comparable.</p>
-                    </article>
+                    </section>
     
-                    <article>
+                    <section>
                         <h3>Focus</h3>
                         <p>The project emphasizes clear separation between frontend, backend, and database logic. Building and maintaining these boundaries helped me better understand how data flows through a full-stack system.</p>
-                    </article>
+                    </section>
                 </div>
             </div>
         </section>
@@ -87,7 +87,7 @@
                 <h2>How It Works</h2>
                 
                 <div class="section-content">
-                    <article>
+                    <section>
                         <h3>Post a Lap</h3>
                         <p>Posting a lap is the central action of TrackAttack. Every other feature supports this core flow.</p>
                         <ul>
@@ -96,18 +96,18 @@
                             <li>Instant feedback via lap detail view</li>
                             <li>Automatic leaderboard update</li>
                         </ul>
-                    </article>
+                    </section>
     
-                    <article>
+                    <section>
                         <h3>Compare & Explore</h3>
                         <p>Users can explore laps through recent submissions and track-specific leaderboards to compare performance across drivers and sessions.</p>
                         <p>Structured filtering and consistent data modeling make performance comparison clear and reliable.</p>
-                    </article>
+                    </section>
     
-                    <article>
+                    <section>
                         <h3>Interact in Real-Time</h3>
                         <p>Real-time updates were implemented to reduce page reloads and improve responsiveness. This helped make interactions feel more immediate.</p>
-                    </article>
+                    </section>
                 </div>
             </div>
         </section>
@@ -117,7 +117,7 @@
                 <h2>Architecture & Technical Thinking</h2>
                 
                 <div class="section-content">
-                    <article>
+                    <section>
                         <p>The application is separated into frontend and backend services to keep responsibilities clearly divided and to better understand how client-server communication works in practice.</p>
                         <ul>
                             <li>React + Vite for frontend development and client-side state management</li>
@@ -127,7 +127,7 @@
                             <li>Socket.IO for real-time comment updates</li>
                             <li>Ownership checks enforced server-side</li>
                         </ul>
-                    </article>
+                    </section>
                 </div>
             </div>
         </section>
@@ -137,19 +137,19 @@
                 <h2>Constraints & Tradeoffs</h2>
                 
                 <div class="section-content">
-                    <article>
+                    <section>
                         <h3>Constraints</h3>
                         <ul>
                             <li>Manual lap time format (hh:mm:sss.fff)</li>
                             <li>Limited supported games & tracks</li>
                             <li>No automatic video verification</li>
                         </ul>
-                    </article>
+                    </section>
     
-                    <article>
+                    <section>
                         <h3>Tradeoffs</h3>
                         <p>Instead of implementing complex video validation, I prioritized core submission flow and real-time interaction stability. Feature scope was intentionally limited to keep the structure manageable and focused.</p>
-                    </article>
+                    </section>
                 </div>
             </div>
         </section>
@@ -159,7 +159,7 @@
                 <h2>Improvements & Reflection</h2>
                 
                 <div class="section-content">
-                    <article>
+                    <section>
                         <h3>Improvements</h3>
                         <ul>
                             <li>Modularizing the API and database logic into smaller, reusable modules</li>
@@ -168,14 +168,14 @@
                             <li>Implementing automated lap verification (e.g., community voting system)</li>
                             <li>Adding analytics for improved clarity and experience</li>
                         </ul>
-                    </article>
+                    </section>
     
-                    <article>
+                    <section>
                         <h3>Reflection</h3>
                         <p>This project improved my understanding of how important structure becomes as an application grows. I learned that separating concerns early makes future changes easier, even though the system is still relatively simple.</p>
                         <p>In hindsight, I recognized that parts of the UI could have been abstracted into more reusable components, particularly shared layout elements. This insight helped me better understand when abstraction improves maintainability and when simplicity is sufficient.</p>
                         <p>AI was used as a support tool when I was stuck on specific implementation details, such as understanding iframe behavior, refining filtering logic, or optimizing complex SQL queries. The overall system structure and data modeling decisions were planned and implemented by me.</p>
-                    </article>
+                    </section>
                 </div>
             </div>
         </section>
@@ -185,9 +185,9 @@
                 <h2>Accessibility</h2>
                 
                 <div class="section-content">
-                    <article>
+                    <section>
                         <p>Accessibility improvements were implemented during later refinement stages of the project. Non-semantic elements were replaced with appropriate HTML elements, form labels were clarified, keyboard interaction was reviewed, and contrast issues were addressed using Lighthouse audits.</p>
-                    </article>
+                    </section>
                 </div>
             </div>
         </section>
@@ -206,9 +206,11 @@
     <footer>
         <div class="container">    
             <hr>
-            <address>
-                Alexandre Erzadeoglu · &copy; 2026 · <a href="mailto:ealex.contact@gmail.com">ealex.contact@gmail.com</a> ·
-                LinkedIn
+            <address class="footer-contact">
+                <span>Alexandre Erzadeoglu</span>
+                <span>&copy; 2026</span>
+                <a href="mailto:ealex.contact@gmail.com">ealex.contact@gmail.com</a>
+                <a href="#">LinkedIn</a>
             </address>
         </div>
     </footer>

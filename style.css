@@ -61,7 +61,7 @@ img {
 .nav-list a {
     text-decoration: none;
     font-size: 24px;
-    color: #1C1C1C;
+    color: #585858;
 }
 
 /* ======================== Hero Section ======================== */
@@ -269,17 +269,25 @@ hr {
     color: #979797;
 }
 
-address {
+.footer-contact {
     display: flex;
     justify-content: center;
+    gap: 16px;
     padding: 52px;
     font-style: normal;
 }
 
-address a {
-    color: #1C1C1C;
+.footer-contact a, span {
+    color: #333333;
     text-decoration: none;
     font-weight: 500;
+}
+
+
+.footer-contact span:not(:last-child)::after, 
+.footer-contact a:not(:last-child)::after {
+    content: "·";
+    margin-left: 16px;
 }
 
 /* #current-page {
@@ -294,6 +302,7 @@ address a {
     text-decoration: underline #1C1C1C 3px;
     text-underline-offset: 8px;
     font-weight: 700;
+    color: #1C1C1C;
 }
 
 .contact-cta {
