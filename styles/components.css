@@ -34,6 +34,20 @@
     margin: 24px 0 16px 0;
 }
 
+/* ======================== Links ======================== */
+
+.external-link {
+    color: #333333;
+    text-decoration: underline;
+    text-underline-offset: 8px;
+    font-weight: 500;
+    font-size: 20px;
+}
+
+.external-link::after {
+  content: " ↗";
+}
+
 /* ======================== Project Cards ======================== */
 
 .project-cards {

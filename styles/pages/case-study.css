@@ -38,6 +38,12 @@
     gap: 52px;
 }
 
+.gallery-grid-mobile {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 24px;
+}
+
 .project-gallery img,
 .gallery-grid img {
     width: 100%;
