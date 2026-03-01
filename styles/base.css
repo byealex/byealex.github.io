@@ -1,0 +1,39 @@
+/* ======================== Reset ======================== */
+
+html, body {
+    margin: 0;
+    font-family: "Inter", sans-serif;
+}
+
+/* ======================== Typography ======================== */
+
+h1 {
+    font-weight: 700;
+    font-size: 96px;
+}
+
+h2 {
+    font-weight: 500;
+    font-size: 48px;
+}
+
+h3 {
+    font-size: 40px;
+    font-weight: 500;
+}
+
+p {
+    color: #333333;
+}
+
+ul {
+    padding-left: 20px;
+    color: #333333;
+}
+
+/* ======================== Media ======================== */
+
+img {
+    height: 748px;
+    width: auto;
+}
