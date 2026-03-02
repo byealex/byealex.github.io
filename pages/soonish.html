@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Soonish · Case Study</title>
+    <link rel="stylesheet" href="/style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,100..900&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <nav>
+                <ul class="nav-list">
+                    <li><a href="/index.html">About</a></li>
+                    <li><a href="/pages/projects.html">Projects</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="project-case-study">
+        <!-- HERO -->
+        <section class="hero">
+            <div class="container">
+                <div class="project-hero">
+                    <h1>Soonish</h1>
+
+                    <div class="project-devtags">
+                        <span>Solo developer</span>
+                        <span>·</span>
+                        <span>2026</span>
+                    </div>
+
+                    <div class="project-tags">
+                        <span>Mobile App</span>
+                        <span>Flutter</span>
+                        <span>Play Store soon</span>
+                    </div>
+
+                    <p class="project-intro">
+                        Soonish is a minimal reminder app built to reduce the friction of setting short, time-based reminders. Reminders are intentionally limited to the next 24 hours and can be created in seconds using preset times and swipe interactions. The project prioritizes interaction efficiency and cognitive simplicity over feature breadth.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- VISUAL HIGHLIGHT -->
+        <section>
+            <div class="container project-gallery">
+                <div>
+                    <div class="gallery-grid-mobile">
+                        <div class="feature-display">
+                            <img src="/assets/images/soonish/Frame_1.png" alt="Soonish quick reminder preset time selection" />
+                            <div class="feature-caption">
+                                <h3>Quick Setup</h3>
+                                <p>
+                                    Create reminders in just a few taps. Choose 15 minutes, 1 hour, or pick your own time. No typing required unless you want to.
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="feature-display">
+                            <img src="/assets/images/soonish/Frame_2.png" alt="Soonish swipe gesture to start a reminder" />
+                            <div class="feature-caption">
+                                <h3>Swipe Interaction</h3>
+                                <p>
+                                    Start a reminder with a single swipe and stop it the same way. Faster than navigating menus or filling forms.
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="feature-display">
+                            <img src="/assets/images/soonish/Frame_3.png" alt="Soonish instant reminder bell tile" />
+                            <div class="feature-caption">
+                                <h3>Instant Reminder</h3>
+                                <p>
+                                    The Instant Reminder follows the same activation flow as regular reminders but omits the context field. This reduces interaction steps for short, time-based nudges where additional labeling is unnecessary.
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="feature-display">
+                            <img src="/assets/images/soonish/Frame_4.png" alt="Soonish gentle notification that stays visible" />
+                            <div class="feature-caption">
+                                <h3>Notifications</h3>
+                                <p>
+                                    Notifications behave like sticky notes in the notification center. Unlike alarms or timers, Soonish does not demand to be dismissed and stays visible until you are ready.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- OVERVIEW -->
+        <section class="overview">
+            <div class="container">
+                <h2>Intent</h2>
+
+                <div class="section-content">
+                    <section>
+                        <h3>What This Is</h3>
+                        <p>
+                            Soonish is a lightweight utility designed for quick reminders such as short breaks, temporary tasks, or time-based nudges. It removes categories, accounts, and complex scheduling to keep the core action fast and predictable.
+                        </p>
+                    </section>
+
+                    <section>
+                        <h3>What This Is Not</h3>
+                        <p>
+                            This is not a task management system or long-term planning tool. 
+                            It does not aim to replace calendar apps or productivity platforms. 
+                            The scope is intentionally narrow to protect speed and clarity.    
+                        </p>
+                    </section>
+
+                    <section>
+                        <h3>What I Practiced</h3>
+                        <p>
+                            This project focused on reducing interaction cost to the absolute minimum. I explored how few decisions a user needs to make before completing an action and how interface structure influences perceived effort.
+                        </p>
+                        <ul>
+                            <li>Designing for simplicity without making the interface feel empty</li>
+                            <li>Reducing interaction cost to the absolute minimum</li>
+                            <li>Creating calm notification behavior instead of urgent alerts</li>
+                            <li>Shipping a focused utility app end-to-end in Flutter</li>
+                        </ul>
+                    </section>
+                </div>
+            </div>
+        </section>
+
+        <!-- PHILOSOPHY -->
+        <section class="how-it-works">
+            <div class="container">
+                <h2>Philosophy & Design Decisions</h2>
+
+                <div class="section-content">
+                    <section>
+                        <h3>Reminders Should Be Lighter Than the Task</h3>
+                        <p>
+                            The core principle behind Soonish is that setting a reminder should require less effort than completing the task itself. Preset time options, optional text input, and direct swipe actions were implemented to reduce both typing and navigation steps.
+                        </p>
+                    </section>
+
+                    <section>
+                        <h3>Speed Over Features</h3>
+                        <p>
+                            Instead of expanding into recurring schedules, tagging systems, or cloud synchronization, the product prioritizes immediacy. Additional features were intentionally deferred to prevent increased setup time and cognitive load.
+                        </p>
+                    </section>
+
+                    <section>
+                        <h3>Deliberate Simplicity</h3>
+                        <p>
+                            The interface is intentionally minimal. Each feature is evaluated based on whether it supports the primary use case of quick reminder creation. This constraint helps maintain product clarity and prevents unnecessary complexity.
+                        </p>
+                    </section>
+                </div>
+            </div>
+        </section>
+
+        <!-- INTERACTION -->
+        <section class="architecture">
+            <div class="container">
+                <h2>Interaction Design</h2>
+
+                <div class="section-content">
+                    <section>
+                        <h3>Swipe to Act</h3>
+                        <p>
+                            Reminders can be started and stopped using a single swipe gesture. This interaction reduces reliance on buttons and menu navigation while keeping actions reversible and clear.
+                        </p>
+                    </section>
+
+                    <section>
+                        <h3>Tap and Go</h3>
+                        <p>
+                            The preset reminder tile enables immediate creation without typing. This reduces decision fatigue in situations where speed is more important than customization.
+                        </p>
+                    </section>
+
+                    <section>
+                        <h3>Calm Notification UX</h3>
+                        <p>
+                            Notifications remain visible until cleared rather than requiring immediate dismissal. This approach avoids urgency and allows reminders to function as passive prompts instead of interruptions.
+                        </p>
+                    </section>
+                </div>
+            </div>
+        </section>
+
+        <!-- TECH -->
+        <section class="constraints-tradeoffs">
+            <div class="container">
+                <h2>Implementation Notes</h2>
+
+                <div class="section-content">
+                    <section>
+                        <h3>Architecture</h3>
+                        <ul>
+                            <li>Built in Flutter</li>
+                            <li>Local-only persistence</li>
+                            <li>Lightweight state management focused on speed</li>
+                            <li>No backend and no authentication layer</li>
+                        </ul>
+                    </section>
+
+                    <section>
+                        <h3>Product Tradeoffs</h3>
+                        <p>
+                            Cloud synchronization, recurring reminders, and advanced categorization were deliberately excluded from the first version. These additions would increase product weight and setup complexity. The current version prioritizes immediacy over extensibility.
+                        </p>
+                    </section>
+                </div>
+            </div>
+        </section>
+
+        <!-- REFLECTION -->
+        <section class="improvements-reflection">
+            <div class="container">
+                <h2>Reflection</h2>
+
+                <div class="section-content">
+                    <section>
+                        <h3>What I Would Improve Next</h3>
+                        <ul>
+                            <li>Refactor parts of the codebase for clearer separation between UI and logic</li>
+                            <li>Explore optional recurring reminders without slowing the core flow</li>
+                            <li>Strengthen micro-interactions to enhance perceived speed</li>
+                            <li>Run small user tests to validate product decisions</li>
+                        </ul>
+                    </section>
+
+                    <section>
+                        <h3>What I Learned</h3>
+                        <p>
+                            This project reinforced how difficult true simplicity can be. Reducing friction requires careful constraint rather than feature accumulation. I learned that clarity of scope often improves product coherence more than expanding capability.
+                        </p>
+                    </section>
+                </div>
+            </div>
+        </section>
+
+        <!-- CONTACT -->
+        <section class="contact">
+            <div class="container">
+                <div class="project-contact">
+                    <p class="closing-cta">Want to talk product philosophy, simplicity-first design, or speed-focused UX?</p>
+                    <a class="btn-secondary" href="mailto:ealex.contact@gmail.com">Let's connect</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <hr />
+            <address class="footer-contact">
+                <span>Alexandre Erzadeoglu</span>
+                <span>&copy; 2026</span>
+                <a href="mailto:ealex.contact@gmail.com">ealex.contact@gmail.com</a>
+                <a href="#">LinkedIn</a>
+            </address>
+        </div>
+    </footer>
+</body>
+
+</html>

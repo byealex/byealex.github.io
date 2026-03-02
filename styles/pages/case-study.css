@@ -41,7 +41,9 @@
 .gallery-grid-mobile {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 24px;
+    column-gap: 24px;
+    row-gap: 52px;
+    /* gap: 24px; */
 }
 
 .project-gallery img,
