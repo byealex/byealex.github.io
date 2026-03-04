@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Stockt · Case Study</title>
+    <link rel="stylesheet" href="/style.css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,100..900&display=swap"
+        rel="stylesheet" />
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <nav>
+                <ul class="nav-list">
+                    <li><a href="/index.html">About</a></li>
+                    <li><a href="/pages/projects.html">Projects</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="project-case-study">
+
+        <!-- HERO -->
+        <section class="hero">
+            <div class="container">
+                <div class="project-hero">
+                    <h1>Stockt</h1>
+
+                    <div class="project-devtags">
+                        <span>2-person project</span>
+                        <span>·</span>
+                        <span>2026</span>
+                    </div>
+
+                    <div class="project-tags">
+                        <span>Mobile App</span>
+                        <span>Kotlin</span>
+                        <span>User Research</span>
+                    </div>
+
+                    <p class="project-intro">
+                        Stockt is a research-driven food inventory prototype that helps users manage household items, keep expiry status visible, and check scanned products against dietary preferences. The project focused on redesigning and refining an initial prototype through usability testing and iterative improvements.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- VISUAL HIGHLIGHT -->
+        <section>
+            <div class="container project-gallery">
+                <div>
+                    <div class="gallery-grid-mobile">
+
+                        <div class="feature-display">
+                            <img src="/assets/images/stockt/screen_1.png"
+                                alt="Stockt inventory overview showing structured storage areas and expiry indicators">
+                            <div class="feature-caption">
+                                <h3>Structured Inventory</h3>
+                                <p>
+                                    Items are organized by storage areas such as fridge, pantry, and freezer. Expiry status is surfaced directly within item cards so users can quickly identify items that are expired or expiring soon.
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="feature-display">
+                            <img src="/assets/images/stockt/screen_2.png"
+                                alt="Stockt dietary preferences configuration screen">
+                            <div class="feature-caption">
+                                <h3>Dietary Preferences</h3>
+                                <p>
+                                    Users configure allergens and dietary restrictions that the scanner checks against product ingredients.
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="feature-display">
+                            <img src="/assets/images/stockt/screen_3.png"
+                                alt="Barcode scanning result showing dietary conflict detection and option to add item">
+                            <div class="feature-caption">
+                                <h3>Dietary Safety Scan</h3>
+                                <p>
+                                    Scanning a product evaluates its ingredients against the user"s dietary preferences. The Safe or Risk badge reflects dietary compatibility only and is independent of the item’s expiry status. Users can optionally add scanned products directly to their inventory.
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="feature-display">
+                            <img src="/assets/images/stockt/screen_4.png"
+                                alt="Stockt filter view showing items filtered by expiry status">
+                            <div class="feature-caption">
+                                <h3>Expiry Filters</h3>
+                                <p>
+                                    Filters allow users to quickly identify expired items or products expiring today. This feature was tested during usability studies to evaluate whether filtering reduces the effort required to detect risky items.
+                                </p>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- SUMMARY -->
+        <section class="overview">
+            <div class="container">
+                <h2>Project Summary</h2>
+
+                <div class="section-content">
+
+                    <section>
+                        <h3>Context</h3>
+                        <p>
+                            Stockt was built as a two-person university project exploring how mobile tools could help households manage food inventory and reduce waste. Starting from an initial prototype structure, we redesigned and refined the experience through usability testing and iterative improvements.
+                        </p>
+                    </section>
+
+                    <section>
+                        <h3>Scope</h3>
+                        <p>
+                            The prototype includes inventory creation, item management with photo support, expiry visibility through simple indicators, filtering for expiring items, and a barcode scanner that evaluates products against user dietary preferences. Scanned items can optionally be added to the inventory, while expiry dates remain manually selected using the Android date picker.
+                        </p>
+                    </section>
+
+                    <section>
+                        <h3>My Contribution</h3>
+                        <p>
+                            I redesigned and refined the app's interface starting from an initial base implementation. I created the hi-fi prototype and updated user flows in Figma, then implemented the revised screens and interactions in Kotlin. Together with my teammate, I designed the usability study and conducted interviews. Based on the test results, we iteratively adjusted navigation, visual indicators, and interaction details to reduce confusion and improve clarity.
+                        </p>
+                    </section>
+
+                    <section>
+                        <h3>Research and Iteration</h3>
+                        <p>
+                            We evaluated the prototype through heuristic evaluation, SEQ and SUS questionnaires, and A/B comparisons of expiry visibility and filtering. The findings highlighted issues around navigation and indicator clarity, which led to refinements in labeling, iconography, and entry points for key features such as scanning and filtering.
+                        </p>
+                    </section>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- EXTERNAL LINK -->
+        <section class="contact">
+            <div class="container">
+                <div class="project-contact">
+                    <p class="closing-cta">
+                        Full documentation, usability test results, prototype, APK download, and repository are available on the external project page.
+                    </p>
+                    <a class="btn-secondary" href="#" target="_blank" rel="noopener noreferrer">
+                        View full documentation
+                    </a>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer>
+        <div class="container">
+            <hr>
+            <address class="footer-contact">
+                <span>Alexandre Erzadeoglu</span>
+                <span>&copy; 2026</span>
+                <a href="mailto:ealex.contact@gmail.com">ealex.contact@gmail.com</a>
+                <a href="#">LinkedIn</a>
+            </address>
+        </div>
+    </footer>
+
+</body>
+
+</html>
