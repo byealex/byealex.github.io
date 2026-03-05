@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Timeless Ascension · Case Study</title>
+    <link rel="stylesheet" href="/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,100..900&display=swap" rel="stylesheet" />
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <nav>
+                <ul class="nav-list">
+                    <li><a href="/index.html">About</a></li>
+                    <li><a href="/pages/projects.html">Projects</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="project-case-study">
+        <!-- HERO -->
+        <section class="hero">
+            <div class="container">
+                <div class="project-hero">
+                    <h1>Timeless Ascension</h1>
+
+                    <div class="project-devtags">
+                        <span>Solo developer</span>
+                        <span>·</span>
+                        <span>2025</span>
+                    </div>
+
+                    <div class="project-tags">
+                        <span>Browser Game</span>
+                        <span>JavaScript</span>
+                        <span>Game Systems</span>
+                    </div>
+
+                    <p class="project-intro">
+                        Timeless Ascension is a small real-time browser game built to practice game engine fundamentals. The focus is a clear game loop, modular game objects, box collisions, and a simple enemy behavior cycle with readable combat feedback.
+                    </p>
+
+                    <div class="hero-cta">
+                        <a href="#" class="btn-primary">Play now</a>
+                        <a href="#" class="btn-secondary">View on GitHub</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- VISUAL HIGHLIGHT -->
+        <section>
+            <div class="container project-gallery">
+                <div class="feature-display">
+                    <img class="hero-mockup" src="/assets/images/timeless-ascension/mockup.png" alt="Timeless Ascension gameplay">
+                    <div class="feature-caption">
+                        <h3>Gameplay</h3>
+                        <p>Real-time combat and movement built on a simple canvas loop.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- OVERVIEW -->
+        <section class="overview">
+            <div class="container">
+                <h2>Overview</h2>
+
+                <div class="section-content">
+                    <section>
+                        <h3>Goal</h3>
+                        <p>
+                            Build a small but structured real-time system in plain JavaScript, with clear separation between loop control, input handling, collision checks, and object behaviors.
+                        </p>
+                    </section>
+
+                    <section>
+                        <h3>What I Practiced</h3>
+                        <p>
+                            Delta time updates, modular object design, and a predictable update-collision-draw loop that can be extended without rewriting the core logic.
+                        </p>
+                    </section>
+                </div>
+            </div>
+        </section>
+
+        <!-- ARCHITECTURE -->
+        <section class="architecture">
+            <div class="container">
+                <h2>Architecture</h2>
+
+                <div class="section-content">
+                    <section>
+                        <h3>Modular Object System</h3>
+                        <p>
+                            Entities inherit from a shared BaseGameObject that handles sprite animation and drawing, while Player, Enemy, Wall, and AttackTrigger implement behavior in isolated modules.
+                        </p>
+                    </section>
+
+                    <section>
+                        <h3>Attack Triggers</h3>
+                        <p>
+                            Combat uses small trigger objects positioned relative to the player. This keeps attack range logic separate from movement and makes tuning hit ranges straightforward.
+                        </p>
+                    </section>
+                </div>
+            </div>
+        </section>
+
+        <!-- REFLECTION -->
+        <section class="improvements-reflection">
+            <div class="container">
+                <h2>Reflection</h2>
+
+                <div class="section-content">
+                  <section>
+                      <h3>What I Would Improve Next</h3>
+                      <ul>
+                          <li>Refine enemy attack patterns so damage is applied only on a specific animation frame and only when the player is within close range.</li>
+                          <li>Balance the time manipulation mechanic to make it a meaningful strategic tool.</li>
+                          <li>Slow the enemy's baseline speed or introduce short pauses between chases to give the player time to recover.</li>
+                          <li>Adjust the health drain so slowing time can be used for longer moments instead of only brief fractions of a second.</li>
+                      </ul>
+                  </section>
+              </div>
+            </div>
+        </section>
+
+        <!-- CONTACT -->
+        <section class="contact">
+            <div class="container">
+                <div class="project-contact">
+                    <p class="closing-cta">Curious about the decisions behind this project?</p>
+
+                    <a class="btn-secondary" href="mailto:ealex.contact@gmail.com">Let's connect</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <hr />
+            <address class="footer-contact">
+                <span>Alexandre Erzadeoglu</span>
+                <span>&copy; 2026</span>
+                <a href="mailto:ealex.contact@gmail.com">ealex.contact@gmail.com</a>
+                <a href="#">LinkedIn</a>
+            </address>
+        </div>
+    </footer>
+</body>
+
+</html>

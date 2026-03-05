@@ -46,6 +46,11 @@
     /* gap: 24px; */
 }
 
+.hero-mockup {
+    aspect-ratio: 2 / 1;
+    object-fit: cover;
+}
+
 .project-gallery img,
 .gallery-grid img {
     width: 100%;
