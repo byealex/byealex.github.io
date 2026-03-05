@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Murder Mystery · Case Study</title>
+    <link rel="stylesheet" href="/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,100..900&display=swap" rel="stylesheet" />
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <nav>
+                <ul class="nav-list">
+                    <li><a href="/index.html">About</a></li>
+                    <li><a href="/pages/projects.html">Projects</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="project-case-study">
+        <!-- HERO -->
+        <section class="hero">
+            <div class="container">
+                <div class="project-hero">
+                    <h1>Murder Mystery</h1>
+
+                    <div class="project-devtags">
+                        <span>Solo developer</span>
+                        <span>·</span>
+                        <span>2024</span>
+                    </div>
+
+                    <div class="project-tags">
+                        <span>Browser Game</span>
+                        <span>JavaScript</span>
+                        <span>Interactive Story</span>
+                        <span>JSON-driven</span>
+                    </div>
+
+                    <p class="project-intro">
+                        Murder Mystery is a data-driven investigation game built around a simple narrative engine. Story content is defined in JSON and rendered through a state-based UI layer that handles scenes, choices, puzzles, and an investigation flow.
+                    </p>
+
+                    <div class="hero-cta">
+                        <a href="#" class="btn-primary">Play now</a>
+                        <a href="#" class="btn-secondary">View on GitHub</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- VISUAL HIGHLIGHT -->
+        <section>
+            <div class="container project-gallery">
+                <div class="feature-display">
+                    <img src="/assets/images/murder-mystery/screen_1.png" alt="Investigation suspects grid" />
+                    <div class="feature-caption">
+                        <h3>Investigation Flow</h3>
+                        <p>
+                            Investigation phases dynamically generate suspects and dialogue options based on the current scenario state.
+                        </p>
+                    </div>
+                </div>
+                <div>
+                    <h2 class="section-title">Gameplay Systems</h2>
+                    <div class="gallery-grid">
+                        <div class="feature-display">
+                            <img src="/assets/images/murder-mystery/screen_2.png" alt="Puzzle input screen" />
+                            <div class="feature-caption">
+                                <h3>Puzzles and Input</h3>
+                                <p>
+                                    Specific scenarios prompt structured input such as codes or passwords, with validation feedback when incorrect.
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="feature-display">
+                            <img src="/assets/images/murder-mystery/screen_3.png" alt="Inventory UI with items" />
+                            <div class="feature-caption">
+                                <h3>Inventory Interactions</h3>
+                                <p>
+                                    Items can be collected and inspected. Contextual actions such as reading or using items are tied to scenario progression.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- OVERVIEW -->
+        <section class="overview">
+            <div class="container">
+                <h2>Overview</h2>
+
+                <div class="section-content">
+                    <section>
+                        <h3>Goal</h3>
+                        <p>
+                            Build a narrative engine where story content can be extended through JSON data while keeping UI rendering consistent and predictable.
+                        </p>
+                    </section>
+
+                    <section>
+                        <h3>What I Practiced</h3>
+                        <p>
+                            Data-driven application structure, state-based UI updates, dynamic action rendering, and simple systems such as inventory and puzzle validation.
+                        </p>
+                    </section>
+                </div>
+            </div>
+        </section>
+
+        <!-- ARCHITECTURE -->
+        <section class="architecture">
+            <div class="container">
+                <h2>Architecture</h2>
+
+                <div class="section-content">
+                    <section>
+                        <h3>Content and Logic Separation</h3>
+                        <p>
+                            Story content is authored in JSON while the engine focuses on rendering, state transitions, and interaction rules. This reduces hardcoding and makes new scenes easier to add.
+                        </p>
+                    </section>
+
+                    <section>
+                        <h3>Dynamic Rendering</h3>
+                        <p>
+                            Buttons, suspects, and scene visuals are generated at runtime based on the current scenario, keeping the UI layer generic across different phases of the game.
+                        </p>
+                    </section>
+                </div>
+            </div>
+        </section>
+
+        <!-- REFLECTION -->
+        <section class="improvements-reflection">
+            <div class="container">
+                <h2>Reflection</h2>
+
+                <div class="section-content">
+                    <section>
+                        <h3>What I Would Improve Next</h3>
+                        <p>
+                            Add JSON schema validation, introduce save checkpoints, and build a small content authoring workflow to make larger stories easier to maintain.
+                        </p>
+                    </section>
+                </div>
+            </div>
+        </section>
+
+        <!-- CONTACT -->
+        <section class="contact">
+            <div class="container">
+                <div class="project-contact">
+                    <p class="closing-cta">Curious about the decisions behind this project?</p>
+
+                    <a class="btn-secondary" href="mailto:ealex.contact@gmail.com">Let's connect</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <hr />
+            <address class="footer-contact">
+                <span>Alexandre Erzadeoglu</span>
+                <span>&copy; 2026</span>
+                <a href="mailto:ealex.contact@gmail.com">ealex.contact@gmail.com</a>
+                <a href="#">LinkedIn</a>
+            </address>
+        </div>
+    </footer>
+</body>
+
+</html>
