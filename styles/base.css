@@ -3,6 +3,7 @@
 html, body {
     margin: 0;
     font-family: "Inter", sans-serif;
+    background-color: #F9F9F9;
 }
 
 /* ======================== Typography ======================== */
@@ -29,11 +30,4 @@ p {
 ul {
     padding-left: 20px;
     color: #333333;
-}
-
-/* ======================== Media ======================== */
-
-img {
-    height: 748px;
-    width: auto;
 }

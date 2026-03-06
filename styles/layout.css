@@ -10,7 +10,7 @@
 /* ======================== Page Structure ======================== */
 
 header {
-    margin-bottom: 64px;
+    margin-bottom: 48px;
 }
 
 main {
@@ -75,20 +75,27 @@ hr {
 
 /* ======================== Hero ======================== */
 
-.hero .container {
+.hero > .container {
     display: flex;
-    justify-content: space-between;
+    align-items: flex-start;
 }
-
-.hero h1 { margin: 0; }
-.hero h2 { margin: 0; }
 
 .hero-text {
     display: flex;
     flex-direction: column;
     justify-content: start;
     gap: 64px;
+    flex: 0 1 680px;
 }
+
+.hero-portrait {
+    width: 566px;
+    height: auto;
+    border-radius: 1rem;
+}
+
+.hero h1 { margin: 0; }
+.hero h2 { margin: 0; }
 
 .hero-cta {
     display: flex;

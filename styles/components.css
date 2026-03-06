@@ -102,6 +102,7 @@
 
 /* ======================== Intro Statement ======================== */
 
+.hero-title,
 .hero-subtitle {
     text-wrap: balance;
     max-width: 15ch;
