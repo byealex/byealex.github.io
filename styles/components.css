@@ -102,9 +102,15 @@
 
 /* ======================== Intro Statement ======================== */
 
+.hero-subtitle {
+    text-wrap: balance;
+    max-width: 15ch;
+}
+
 .intro-statement {
     margin: 0;
     max-width: 400px;
     font-size: 20px;
     font-weight: 500;
+    text-wrap: balance;
 }
