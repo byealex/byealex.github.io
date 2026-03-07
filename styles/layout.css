@@ -249,6 +249,7 @@ hr {
 
     .hero-text {
         gap: 32px;
+        flex: initial;
     }
 
     .hero-cta {
