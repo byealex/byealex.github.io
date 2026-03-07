@@ -51,14 +51,13 @@
 /* ======================== Project Cards ======================== */
 
 .project-cards {
-    display: flex;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
     column-gap: 24px;
     row-gap: 80px;
-    flex-wrap: wrap;
 }
 
 .project-card {
-    width: 400px;
     display: flex;
     flex-direction: column;
     gap: 10px;
@@ -114,4 +113,69 @@
     font-size: 20px;
     font-weight: 500;
     text-wrap: balance;
+}
+
+/* ======================== Responsive Design ======================== */
+@media (max-width: 1100px) {
+    .project-cards {
+        grid-template-columns: repeat(2, 1fr);
+        row-gap: 56px;
+    }
+
+    .intro-statement {
+        font-size: 18px;
+    }
+}
+
+@media (max-width: 768px) {
+    .btn-primary,
+    .btn-secondary,
+    .external-link {
+        font-size: 18px;
+    }
+
+    .project-cards {
+        grid-template-columns: 1fr;
+        row-gap: 40px;
+        max-width: 480px;
+        margin: 0 auto;
+    }
+
+    .project-tags {
+        flex-wrap: wrap;
+        gap: 12px;
+    }
+
+    .project-card span {
+        padding: 8px 0;
+    }
+
+    .project-title {
+        font-size: 28px;
+    }
+
+    .intro-statement {
+        max-width: 32ch;
+        font-size: 18px;
+    }
+}
+
+@media (max-width: 480px) {
+    .btn-primary,
+    .btn-secondary {
+        font-size: 16px;
+        padding: 12px 14px;
+    }
+
+    .project-cards {
+        max-width: 100%;
+    }
+
+    .project-title {
+        font-size: 24px;
+    }
+
+    .external-link {
+        font-size: 16px;
+    }
 }
