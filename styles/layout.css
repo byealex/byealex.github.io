@@ -10,7 +10,7 @@
 /* ======================== Page Structure ======================== */
 
 header {
-    margin-bottom: 48px;
+    margin-bottom: 64px;
 }
 
 main {
@@ -90,12 +90,12 @@ hr {
     display: flex;
     flex-direction: column;
     justify-content: start;
-    gap: 64px;
+    gap: 96px;
     flex: 0 1 680px;
 }
 
 .hero-portrait {
-    width: 566px;
+    width: 633px;
     height: auto;
     border-radius: 1rem;
 }
@@ -141,9 +141,8 @@ hr {
         max-width: 1024px;
     }
 
-    .hero-portrait {
-        width: 100%;
-        max-width: 566px;
+    .hero-text {
+        gap: 64px;
     }
 }
 
@@ -154,12 +153,12 @@ hr {
     }
 
     .hero-text {
-        gap: 56px;
+        gap: 32px;
     }
 
     .hero-portrait {
         width: 100%;
-        max-width: 464px;
+        max-width: 400px;
     }
 
     .section-content {
@@ -171,15 +170,6 @@ hr {
     .container {
         max-width: 833px;
         padding: 0 16px;
-    }
-
-    .hero-text {
-        gap: 40px;
-    }
-    
-    .hero-portrait {
-        width: 100%;
-        max-width: 416px;
     }
 }
 
