@@ -95,7 +95,7 @@ hr {
 }
 
 .hero-portrait {
-    width: 633px;
+    width: 660px;
     height: auto;
     border-radius: 1rem;
 }
@@ -142,7 +142,7 @@ hr {
     }
 
     .hero-text {
-        gap: 64px;
+        gap: 72px;
     }
 }
 
