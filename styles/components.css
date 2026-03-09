@@ -72,6 +72,10 @@
     border-radius: 1rem;
 }
 
+.project-info {
+    margin: 0 .5rem;
+}
+
 .project-tags {
     display: flex;
     gap: 20px;

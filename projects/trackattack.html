@@ -57,54 +57,52 @@
             </div>
         </section>
 
-        <section>
-            <div class="container project-gallery">
-                <div class="feature-display">
-                    <img src="/assets/images/trackattack/home.png" alt="TrackAttack homepage showing recent lap submissions and navigation">
-                    <div class="feature-caption">
-                        <h3>Homepage</h3>
-                        <p>Homepage highlighting featured content and structured submission table.</p>
-                    </div>
+        <div class="container project-gallery">
+            <div class="feature-display">
+                <img src="/assets/images/trackattack/home.png" alt="TrackAttack homepage showing recent lap submissions and navigation">
+                <div class="feature-caption">
+                    <p class="feature-title">Homepage</p>
+                    <p>Homepage highlighting featured content and structured submission table.</p>
                 </div>
+            </div>
 
-                <div>
-                    <h2>Core Features</h2>
-                    <div class="gallery-grid">
-                        <div class="feature-display">
-                            <img src="/assets/images/trackattack/lap-form.png" alt="TrackAttack lap submission form with fields for track, car, lap time, and video proof">
-                            <div class="feature-caption">
-                                <h3>Lap Submission</h3>
-                                <p>Users can submit lap times with associated track, car, and video proof.</p>
-                            </div>
+            <div>
+                <h2>Core Features</h2>
+                <div class="gallery-grid">
+                    <div class="feature-display">
+                        <img src="/assets/images/trackattack/lap-form.png" alt="TrackAttack lap submission form with fields for track, car, lap time, and video proof">
+                        <div class="feature-caption">
+                            <p class="feature-title">Lap Submission</p>
+                            <p>Users can submit lap times with associated track, car, and video proof.</p>
                         </div>
-                        
-                        <div class="feature-display">
-                            <img src="/assets/images/trackattack/track-details.png" alt="TrackAttack track leaderboard showing ranked lap times with associated cars and drivers">
-                            <div class="feature-caption">
-                                <h3>Track Details</h3>
-                                <p>Individual track page with leaderboard, performance history and filtering options.</p>
-                            </div>
-                        </div>
+                    </div>
                     
-                        <div class="feature-display">
-                            <img src="/assets/images/trackattack/lap-details.png" alt="TrackAttack lap detail view showing lap time, track, car, driver, and comments section">
-                            <div class="feature-caption">
-                                <h3>Lap Details</h3>
-                                <p>Lap detail combining performance data, comments, and competitive context.</p>
-                            </div>
+                    <div class="feature-display">
+                        <img src="/assets/images/trackattack/track-details.png" alt="TrackAttack track leaderboard showing ranked lap times with associated cars and drivers">
+                        <div class="feature-caption">
+                            <p class="feature-title">Track Details</p>
+                            <p>Individual track page with leaderboard, performance history and filtering options.</p>
                         </div>
-                        
-                        <div class="feature-display">
-                            <img src="/assets/images/trackattack/profile.png" alt="TrackAttack profile page showing user information and list of submitted laps with associated tracks and cars">
-                            <div class="feature-caption">
-                                <h3>User Profiles</h3>
-                                <p>Profiles display user information and a history of submitted laps.</p>
-                            </div>
+                    </div>
+                
+                    <div class="feature-display">
+                        <img src="/assets/images/trackattack/lap-details.png" alt="TrackAttack lap detail view showing lap time, track, car, driver, and comments section">
+                        <div class="feature-caption">
+                            <p class="feature-title">Lap Details</p>
+                            <p>Lap detail combining performance data, comments, and competitive context.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="feature-display">
+                        <img src="/assets/images/trackattack/profile.png" alt="TrackAttack profile page showing user information and list of submitted laps with associated tracks and cars">
+                        <div class="feature-caption">
+                            <p class="feature-title">User Profiles</p>
+                            <p>Profiles display user information and a history of submitted laps.</p>
                         </div>
                     </div>
                 </div>
             </div>
-        </section>
+        </div>
 
         <section class="overview">
             <div class="container">
@@ -164,7 +162,7 @@
                 <h2>Architecture & Technical Thinking</h2>
                 
                 <div class="section-content">
-                    <section>
+                    <div>
                         <p>The application is separated into frontend and backend services to keep responsibilities clearly divided and to better understand how client-server communication works in practice.</p>
                         <ul>
                             <li>React + Vite for frontend development and client-side state management</li>
@@ -174,7 +172,7 @@
                             <li>Socket.IO for real-time comment updates</li>
                             <li>Ownership checks enforced server-side</li>
                         </ul>
-                    </section>
+                    </div>
                 </div>
             </div>
         </section>
@@ -232,14 +230,12 @@
                 <h2>Accessibility</h2>
                 
                 <div class="section-content">
-                    <section>
-                        <p>Accessibility improvements were implemented during later refinement stages of the project. Non-semantic elements were replaced with appropriate HTML elements, form labels were clarified, keyboard interaction was reviewed, and contrast issues were addressed using Lighthouse audits.</p>
-                    </section>
+                    <p>Accessibility improvements were implemented during later refinement stages of the project. Non-semantic elements were replaced with appropriate HTML elements, form labels were clarified, keyboard interaction was reviewed, and contrast issues were addressed using Lighthouse audits.</p>
                 </div>
             </div>
         </section>
 
-        <section class="contact">
+        <div class="contact">
             <div class="container">
                 <div class="project-contact">
                     <p class="closing-cta">Curious about the architecture or decisions behind this project?</p>
@@ -247,7 +243,7 @@
                     <a class="btn-secondary" href="mailto:ealex.contact@gmail.com">Let's connect</a>
                 </div>
             </div>
-        </section>
+        </div>
     </main>
 
     <footer>
